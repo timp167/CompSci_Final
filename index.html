@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<div id="audio-player-container">
+     <!-- 
+    <audio src="Music/Mumei.mp3"> </audio>
+     -->
+    <!-- -->
+    <audio src="https://assets.codepen.io/4358584/Anitek_-_Komorebi.mp3" preload="metadata" loop></audio>
+    
+    <p>Audio Player Ish </p>
+    <button id="play-icon"></button>
+    <span id="current-time" class="time">0:00</span>
+    <output id="volume-output">100</output>
+    <input type="range" id="volueme-slider" max="100" value="100">
+    <button id="mute-icon"></button>
+</div>
+
+<script src="https://unpkg.com/notepack.io@2.3.0/dist/notepack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+<script src="Java/script.js"></script>
